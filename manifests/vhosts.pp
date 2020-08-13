@@ -4,6 +4,11 @@
 #
 # @example
 #   apache::vhosts { 'namevar': }
+#   port      => INT,
+#   subdomain => STR,
+#   admin     => STR,
+#   docroot   => STR,
+
 define apache::vhosts (
   Integer $port,
   String $subdomain,
